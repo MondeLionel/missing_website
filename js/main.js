@@ -8,3 +8,6 @@ const target = document.querySelector('#js-target');
 
 
 
+ScrollOut({
+     scrollingElement: ".modal-content"
+})
