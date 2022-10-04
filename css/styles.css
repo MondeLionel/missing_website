@@ -57,11 +57,10 @@ svg{
 	width: 100%;
 	z-index: 5;
 	position: absolute;
-	/*! background-color: rgba(255, 255, 255, 0.25); */
-	/*! backdrop-filter: blur(16px); */
 	justify-content: space-between;
 	align-items: center;
 	padding: 1em;
+	border-bottom: 1px solid #111;
 }
 
 .menu{
@@ -185,6 +184,12 @@ svg{
 	align-items: center;
 	flex: 1;
 	border: 1px solid #2b2b2b;
+	background-blend-mode: multiply;
+	flex-direction: column;
+}
+
+.cardHistory:hover{
+	background-blend-mode: hard-light;
 }
 
 .cardHistory h2{
