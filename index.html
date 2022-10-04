@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wena wendlovu, Bayede!</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;900&display=swap" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/css/locomotive-scroll.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<style type="text/css">
+		.loaders{
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background-color: #000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 10;
+		}
+
+		.loaders p{
+			color: #eee;
+			animation: loading 1s linear infinite alternate;
+		}
+
+	@keyframes loading {
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+}
+
+	</style>
+</head>
+<body class="loading" >
+
+	<main data-scroll-container>
+			<div class="hero fullWidth" data-scroll-section>
+				<div class="content">
+					<h4 data-scroll data-scroll-speed="3">Isilo</h4>
+					<h1 data-scroll data-scroll-speed="2">
+						<span>CETSHWAYO</span>
+					</h1>
+					<h1 data-scroll data-scroll-speed="1">
+						<span>KaMPANDE</span>
+					</h1>
+					<p data-scroll data-scroll-speed="1">
+						<span>King of the Kingdom kaZulu. Son of King Mpande and Queen Ngqumbazi.</span>
+					</p>
+				</div>
+			</div>
+			<section id="js-target" class="lineage fullWidth" data-scroll-section>
+				<h1>Lineage</h1>
+				<div class="fixedContainer" data-scroll data-scroll-sticky data-scroll-target="#js-target" data-scroll-offset="15%,5%">
+				<div class="kings" data-scroll data-scroll-speed="20" data-scroll-direction="horizontal" >
+<!-- 					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Mnguni kaNkosinKulu</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Luzumana kaMnguni</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Malandela kaLuzumana</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Zulu I kaMalandela</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Nkosinkulu kaZulu I</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Ntombela kaNkosinkulu</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Zulu II kaNtombela</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Gumede kaZulu</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Phunga kaGumede</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Mageba kaGumede</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Ndaba kaMageba</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Jama kaNdaba</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Mkabayi kaJama</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Senzangakhona kaJama</p>
+					</a>
+					<a href="#" class="king">
+						<img src="" alt="">
+						<p class="name">Sigujana kaSenzangakhona</p>
+					</a> -->
+					<a href="#" class="king">
+						<img src="img/kings/KingShaka.jpg" alt="" class="img-fluid">
+						<p class="name">Shaka kaSenzangakhona</p>
+					</a>
+					<a href="#" class="king">
+						<img src="img/kings/Dingane.png" alt="" class="img-fluid">
+						<p class="name">Dingane kaSenzangakhona</p>
+					</a>
+					<a href="#" class="king">
+						<img src="img/kings/King-Mpande-1.gif" alt="" class="img-fluid">
+						<p class="name">Mpande kaSenzangakhona</p>
+					</a>
+					<a href="#" class="king">
+						<img src="img/kings/Cetshwayo-c1875.jpg" alt="" class="img-fluid">
+						<p class="name">Cetshwayo kaMpande</p>
+					</a>
+					<a href="#" class="king">
+						<img src="img/kings/Dinizulu.jpg" alt="" class="img-fluid">
+						<p class="name">Dinuzulu kaCetshwayo</p>
+					</a>
+					<a href="#" class="king">
+						<img src="img/kings/Screenshot_20210518-174534_Gallery.jpg" alt="" class="img-fluid">
+						<p class="name">Solomon kaDinuzulu</p>
+					</a>
+					<a href="#" class="king">
+						<img src="img/kings/Cyprian_Bhekuzulu_kaSolomon.jpg" alt="" class="img-fluid">
+						<p class="name">Cyprian Bhekuzulu kaSolomon</p>
+					</a>
+					<a href="#" class="king">
+						<img src="img/kings/King_Goodwill_Zwelithini.jpg" alt="" class="img-fluid">
+						<p class="name">Goodwill Zwelithini kaBhekuzulu</p>
+					</a>
+					<a href="#" class="king">
+						<img src="img/kings/misuzulu.jpg" alt="" class="img-fluid">
+						<p class="name">Misuzulu Zulu kaZwelithini</p>
+					</a>
+				</div>
+
+				</div>
+			</section>
+			<section class="history fullWidth" data-scroll-section style="background-color: #111;">
+				<div class="container">
+					<h3 data-scroll>History</h3>
+				<h1>"Hlabana nawe Jininindi omnyama!"</h1>
+				<div class="praises">
+					<p>Uzulu laduma obala, lapho kungemunga kungemtholo</p>
+					<p>UHlamvana bhula mlilo, Ubaswe uMantshonga benoGqelemana</p>
+					<p>Inzima lemnyama, Engabubende bezingonyama</p>
+					<p>Ibiqhutshwa uMseleni benoNgalaza</p>
+					<p>Bathi ifanele ukuyosikwa izihlangu eMkhweyantaba.</p>
+					<p>Bathi iyekeleni ubumnyama bayo buyasabeka;</p>
+					<p>Ifanele ukuyawucela imvuka kaNkosinkulu.</p>
+					<p>Unqabelabantu ukudonsa;</p>
+				</div>
+				</div>
+				
+			</section>
+			<section class="wars fullWidth" data-scroll-section>
+				<h1>Wars</h1>
+				
+			</section>
+			<section class="rule fullWidth" data-scroll-section>
+				<h1>Rule</h1>
+			</section>
+	</main>
+
+	<!-- modal -->
+
+
+	<script src="vendor/js/bootstrap.bundle.min.js"></script>
+	<script src="vendor/js/anime.min.js"></script>
+	<script src="vendor/js/howler.min.js"></script>
+	<script src="vendor/js/locomotive-scroll.min.js"></script>
+	<script src="vendor/js/rellax.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
