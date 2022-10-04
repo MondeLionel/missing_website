@@ -77,5 +77,7 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux
 img/.picasa.ini
+img/.picasaoriginals
+img/.picasaoriginals/*
 img/.picasaoriginals/.picasa.ini
 img/.picasaoriginals/lion.jpg
