@@ -81,3 +81,6 @@ img/.picasaoriginals
 img/.picasaoriginals/*
 img/.picasaoriginals/.picasa.ini
 img/.picasaoriginals/lion.jpg
+img/cards/.picasaoriginals/cetshwayo.jpg
+node_modules
+media
