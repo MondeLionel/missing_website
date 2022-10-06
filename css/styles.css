@@ -60,7 +60,7 @@ svg{
 	justify-content: space-between;
 	align-items: center;
 	padding: 1em;
-	border-bottom: 1px solid #111;
+	/*! border-bottom: 1px solid #111; */
 }
 
 .menu{
@@ -219,6 +219,148 @@ svg{
 	height: 100vh;
 	object-fit: contain;
 }
+
+.cards{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.cardItem{
+	width: 300px;
+	background-color: #222223;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	transform: scale(1);
+	transition: transform 0.3s ease;
+	height: 420px;
+}
+.swiper-slide .cardItem{
+	opacity: 0.3;
+}
+
+.swiper-slide-active .cardItem{
+	opacity: 1;
+	transform: scale3d(1.15,1.15,1);
+	transition: all 0.3s ease;
+
+}
+
+.rating{
+
+	position: absolute;
+	z-index: 1;
+	right: 1em;
+	
+	padding: 10px;
+	/*! border-radius: 19px; */
+	color: #000;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+	backdrop-filter: blur(5px);
+}
+
+[data-rating="gold"] .rating{
+	background-color: #f09b2e;
+	background-image: url('../img/cards/gold.jpg');
+}
+
+
+[data-rating="silver"] .rating{
+	background-color: #eeeeee57;
+	background-image: url('../img/cards/silver.jpg');
+	background-size: contain;
+	color: #fff;
+}
+
+[data-rating="bronze"] .rating{
+	background-color: #986f46;
+	background-image: url('../img/cards/bronze.jpg');
+	color: #fff;
+}
+
+
+
+.cardItem .imgWrapper{
+  height: 250px;
+	overflow: hidden;
+  background-color: #000;
+}
+
+.cardImg{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position:top;
+	mix-blend-mode: luminosity;
+}
+
+.badges{
+	position: absolute;
+	background-color: transparent;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	padding:5px;
+	
+}
+
+.badge{
+  margin-bottom: 5px;
+	padding: 0;
+}
+
+.badge img{
+	width: 3.5em;
+	background-color: darkkhaki;
+	clip-path: circle();
+}
+
+.badge:hover img{
+	background-color: #fff;
+	transition:background-color 0.2s ease;
+}
+
+.meta{
+  padding: 0.3em 1em;
+  background-color: sienna;
+}
+
+.meta h4{
+	font-size: 1.1em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*! margin: 0; */
+}
+
+.meta p{
+	font-size: 0.8rem;
+}
+
+.stats{
+	
+	padding: 1em;
+}
+
+
+.stats p{
+	font-size: 0.8rem;
+}
+
+
+.swiper-wrapper{
+	padding: 2em;
+}
+
+
+
+
 
 
 
