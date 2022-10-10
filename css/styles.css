@@ -249,6 +249,8 @@ svg{
 	transform: scale(1);
 	transition: transform 0.3s ease;
 	height: 420px;
+	border: 2px solid transparent;
+	cursor: grab;
 }
 .swiper-slide .cardItem{
 	opacity: 0.3;
@@ -380,8 +382,18 @@ svg{
 }
 
 
+.swiper-slide-active [data-leader="mkabayi"]{
+	border: 2px solid yellow;
+	cursor: pointer;
+	/*transition: border ease;*/
+}
 
 
+.history{
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
 
 @keyframes fade-in{
 	0%{
