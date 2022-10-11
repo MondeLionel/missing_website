@@ -43,6 +43,12 @@ svg{
 	FILL:#FFF;
 }
 
+.customBtn{
+	margin-top: 3em;
+	border-radius: 100px;
+	letter-spacing: 2px;
+}
+
 .noise{
 	position: fixed;
 	top: 0;
@@ -62,6 +68,9 @@ svg{
 	height: 100vh;
 }
 
+.closeModal{
+	position: absolute;
+}
 .navigation{
 	display: flex;
 	height: 50px;
@@ -394,6 +403,66 @@ svg{
 	display: flex;
 	align-items: center;
 }
+
+.historyContent{
+	min-height: 100vh;
+	position: relative;
+	padding: 2em;
+	background-image:url('../img/warrior.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.historyContent::before{
+	content: '';
+	z-index: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.8);
+
+}
+
+.historyMain{
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+.historyHeader{
+	position: relative;
+	overflow: hidden;
+}
+
+.historyHeader img{
+	position: sticky;
+	width: 400px;	
+}
+
+.historyImg{
+	padding: 7em 0;
+}
+
+.historyImg h1{
+	font-weight: bold;
+	font-size: 10vw;
+}
+
+.lines{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	z-index: 1;
+}
+
+.lines .line{
+	width: 25%;
+	border-left: 1px solid #3c3c3c;
+}
+
 
 @keyframes fade-in{
 	0%{

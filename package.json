@@ -1,7 +1,6 @@
 {
   "name": "_kings",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +18,9 @@
   "homepage": "https://github.com/MondeLionel/eyabohlanga#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "description": "",
+  "dependencies": {
+    "pushin": "^5.2.1"
   }
 }
