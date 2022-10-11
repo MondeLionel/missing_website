@@ -70,6 +70,9 @@ svg{
 
 .closeModal{
 	position: absolute;
+	z-index: 10;
+	right: 2em;
+	top: 1em;
 }
 .navigation{
 	display: flex;
@@ -80,6 +83,7 @@ svg{
 	justify-content: space-between;
 	align-items: center;
 	padding: 1em;
+	margin-top: 15px;
 	/*! border-bottom: 1px solid #111; */
 }
 
@@ -408,9 +412,7 @@ svg{
 	min-height: 100vh;
 	position: relative;
 	padding: 2em;
-	background-image:url('../img/warrior.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+	
 }
 
 .historyContent::before{
@@ -422,7 +424,10 @@ svg{
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0,0,0,0.8);
-
+	background-image: url('../img/warrior.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.2;
 }
 
 .historyMain{

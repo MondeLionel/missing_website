@@ -23,13 +23,14 @@
 				<a href="cards.html" class="menuItem">Notable Figures</a>
 
 			</div>
-			<a href="javascript:void(0)" class="menuItem _jsSound btn btn-light">
+			<a href="javascript:void(0)" class="menuItem _jsSound btn btn-outline-light">
 				<img src="img/icons/sound.png" alt="" class="img-fluid icon">
 				<span>Sound On</span>
 			</a>
 		</div>
+		<!-- SWIPERS BOY -->
 		
-		<div class="scenes swiper-container">
+		<div class="scenes swiper-container swiper-no-swiping">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<audio src="media/audio/Mkabayi.mp3" class="audioItem"></audio>
@@ -45,21 +46,67 @@
 				<div class="swiper-slide">
 					<div class="sceneTwo scene">
 						<div class="narration">
-							<p>The clear moonless night, the cries of twin infants echoed throughout the Kingdom of the Zulu.</p>
-							<p>The princess twins were born and fear ran through the hearts of the people</p>
+							<p class="one">The clear moonless night, the cries of twin infants echoed throughout the Kingdom of the Zulu.</p>
+							<p class="two">The princess twins were born and fear ran through the hearts of the people.</p>
+							<p class="three">The Queen Dowager, distressed and alarmed came to see the king. Her ultimatum both heart-wrenching and neccesary.</p>
+							<p class="four">"One of my granddaughters must rest with our ancestors. Twins are a bad omen, and are going to induce the wrath of the Gods."</p>
+							<p class="five">The King replied,"However neccesary mother. Princesses are good too. They are my children and I cannot bare to kill my own daughter"</p>
+							<p class="six"><b>The Kings word is law. So it shall be. However bitter the law may be.</b></p>
 						</div>
 						<a href="javascript:void(0)" class="btn btn-light nextBtn">Next scene</a>
 					</div>
 				</div>
 				<div class="swiper-slide">
 					<div class="sceneThree scene">
-						<p>Scene three</p>
+						<div class="narration">
+						<p class="one">The Twins birth had come at a cost of the mothers health. Queen Sikhombazane kaManyelela, the Kings consort soon succumbed to illness and weak health.</p>
+						<p class="two">Alarmed, the people started crying aloud, "The Gods have begun to show their wrath! The ancestors are unhappy. This ancient law has been broken and we the people are going to suffer for it!"</p>
+						<p class="three">They wailed in the streets, the rivers, at gatherings.</p>
+						<p class="four">And they pointed their finger at one child.</p>
+						<p class="five">Mkabayi kaJama</p>
+						<p class="six"></p>
+						</div>
 						<a href="javascript:void(0)" class="btn btn-light nextBtn">Next scene</a>
 					</div>
 				</div>
 				<div class="swiper-slide">
 					<div class="sceneFour scene">
-						<p>Scene four</p>
+						<div class="narration">
+							<p class="one">Some elders accused the girl of being the bearer of bad luck, an ill omen.</p>
+							<p class="two">Though hurt, innocent of any wrong-doing, she took all the blame on herself to protect her sister.</p>
+							<p class="three">The bullying and hate will not break Mkabayi.</p>
+							<p class="four">It will temper her spirit like iron to make a iklwa.</p>
+							<p class="five">And Soon enough, her eyes glowed with fire.</p>
+							<p class="six">A burning Fire</p>
+							
+						</div>
+						<a href="javascript:void(0)" class="btn btn-light nextBtn">Next scene</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="sceneFive scene">
+						<div class="narration">
+							<p class="one">And so it was.</p>
+							<p class="two">Mkabayi saw her fathers need for an heir, otherwise his court would revolt. The King was given a woman of Thonga descent as a consort to bear his heir.</p>
+							<p class="three">The people were horrified. "How can our heir be born of the Thonga?" they asked. The seeds of discontent had spread far and wide.</p>
+							<p class="four">Sensing the danger, Mkabayi set out to find a suitable young woman of pedigree to become her fathers consort and bear him an heir.</p>
+							<p class="five">She found a gem woman from the same clan as the departed Queen. </p>
+							<p class="six">Mthaniya kaManyelela was to become the Queen and from her womb, continue the Nguni blood of the Royal family.</p>
+							
+						</div>
+						<a href="javascript:void(0)" class="btn btn-light nextBtn">Next scene</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+				<div class="sceneSix scene">
+						<div class="narration">
+							<p class="one">The Princess sisters, Mmama and Mkabayi were praised by all and sundry. The king, glowing in pride and admiration of their heroic deed.</p>
+							<p class="two">The King said, in a famous remark that would reverberate through the ages, "You have done well, as you should, in bringing Mthaniya here."</p>
+							<p class="three">"Senze ngakhona ukuba uMthaniya simulethe lapha."</p>
+							<p class="four">The hier of the Zulu throne, son of Mthaniya and Jama kaNdaba was born. His name Senzangakhona kaJama!</p>
+							<p class="five"><b>Thus began the life story of Princess Mkabayi kaJama as the most powerful woman in the history of the people of the Reed.</b></p>
+							<p class="six"></p>
+						</div>
 						<a href="javascript:void(0)" class="btn btn-light nextBtn">Next scene</a>
 					</div>
 				</div>
@@ -67,9 +114,11 @@
 		</div>
 		
 		<div class="bgVideoWrapper">
-			<video src="media/smoke.mp4" muted autoplay loop class="bg_video"></video>
+			<video src="" muted autoplay loop class="bg_video"></video>
 		</div>
 	</main>
+
+
 
 	<script src="vendor/js/bootstrap.bundle.min.js"></script>
 	<script src="vendor/js/anime.min.js"></script>
@@ -78,6 +127,6 @@
 <!-- 	<script src="https://unpkg.com/pushin@5.2.1/dist/umd/pushin.min.js"></script> -->
 	<script src="vendor/js/pushin.min.js"></script>
 	<script src="js/kings.js"></script>
-	<audio src="media/audio/thunder.wav" autoplay loop></audio>
+	<audio src="media/audio/thunder.wav" loop id="bg_audio"></audio>
 </body>	
 </html>

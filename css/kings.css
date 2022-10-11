@@ -50,3 +50,31 @@
 .audioItem{
 	display: none;
 }
+
+
+.closeModal{
+	z-index: 1;
+}
+
+._jsSound{
+	text-decoration: none;
+}
+
+._jsSound:hover img{
+	mix-blend-mode: difference;
+}
+
+.narration{
+	width: 80vw;
+	position: relative;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.narration p{
+	font-size: 2em;
+	position: absolute;
+	opacity: 0;
+
+}
