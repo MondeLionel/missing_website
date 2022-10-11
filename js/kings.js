@@ -26,7 +26,7 @@ const swiper = new Swiper('.swiper-container.scenes',{
 })
 
 var bg_sound = new Howl({
-  src: ['../media/audio/thunder.wav'],
+  src: ['./media/audio/thunder.wav'],
   autoplay: true,
   loop: true,
   volume: 0.1,
