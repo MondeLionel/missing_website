@@ -483,6 +483,10 @@ svg{
 
 @media (max-width: 600px){
 	*{}
+
+	p{
+		font-size: 0.9rem;
+	}
 	.selectors{
 		flex-wrap: wrap;
 	}
@@ -494,5 +498,36 @@ svg{
 	
 	.historyContent{
 		padding: 10px;
+	}
+
+	.menu{
+		position: absolute;
+		top: 10vh;
+	}
+	.lineage{
+		display: none;
+	}
+
+	._cards .navigation .logo{
+		opacity: 1;
+	}
+
+	._cards .navigation .menu{
+		opacity: 0;
+	}
+	.menuItem{
+		margin-right: 0;
+		text-decoration: none;
+	}
+
+	.modal p{
+		font-size: 0.8rem;
+	}
+
+	.swiper-slide-active .cardItem{
+		transform: unset;
+	}
+	.swiper-wrapper{
+		padding: unset;
 	}
 }

@@ -12,21 +12,20 @@
 	<link rel="stylesheet" href="vendor/css/swiper.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="">
+<body class="_cards">
 	<div class="noise"></div>
 	<div class="navigation">
 		<div class="logo">
-			<a href="index.html">History of Kings</a>
+			<a href="index.html">Umongo</a>
 		</div>
 		<div class="menu">
 			<a href="javascript:void(0)" class="menuItem">Contact</a>
 			<a href="javascript:void(0)" class="menuItem active">Credits</a>
 			<a href="javascript:void(0)" class="menuItem">Notable Figures</a>
-
 		</div>
-		<a href="javascript:void(0)" class="menuItem">
+		<a href="javascript:void(0)" class="menuItem btn btn-outline-light">
 				<img src="img/icons/sound.png" alt="" class="img-fluid icon">
-				<span>Sound On</span>
+				<span>Sound Off</span>
 			</a>
 	</div>
 <!-- 	<div class="wrapper">
@@ -510,8 +509,13 @@
 	<script src="vendor/js/swiper.min.js"></script>
 	<script>
 		const cardSwiper = new Swiper('.swiper-container.proCards',{
-			slidesPerView: 3,
-		    centeredSlides: true,
+			slidesPerView: 1,
+		    breakpoints: {
+			    420: {
+			      slidesPerView: 3,
+			      centeredSlides: true,
+			    }
+			}
 		})
 
 		const historySwiper = new Swiper('.swiper-container.history',{
@@ -527,6 +531,8 @@
 		cardSwiper.controller.control = historySwiper;  
 
 		// secondSwiper.controller.control = firstSwiper;
+
+
 	</script>
 </body>
 </html>
