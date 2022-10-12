@@ -503,6 +503,11 @@ svg{
 	.menu{
 		position: absolute;
 		top: 10vh;
+		display: flex;
+justify-content: space-between;
+width: 100%;
+left: 0;
+padding: 0 10px;
 	}
 	.lineage{
 		display: none;
@@ -517,7 +522,7 @@ svg{
 	}
 	.menuItem{
 		margin-right: 0;
-		text-decoration: none;
+		/*text-decoration: none;*/
 	}
 
 	.modal p{
