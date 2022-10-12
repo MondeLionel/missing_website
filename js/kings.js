@@ -16,6 +16,10 @@ const body = document.querySelector("body");
 const soundCtrl = document.querySelector("._jsSound")
 const video = document.querySelector(".bg_video");
 const nextBtn = document.querySelectorAll(".nextBtn")
+const bg_audio = document.querySelector('#bg_audio')
+
+console.log(bg_audio)
+bg_audio.volume = 0.35;
 
 
 const swiper = new Swiper('.swiper-container.scenes',{
@@ -26,8 +30,7 @@ const swiper = new Swiper('.swiper-container.scenes',{
 })
 
 var bg_sound = new Howl({
-  src: ['media/audio/thunder.wav'],
-  autoplay: true,
+  src: ['https://link.storjshare.io/s/jxkusjjea7zjkkwe2f6ykpst35va/voices/media/thunder.wav?wrap=0'],
   loop: true,
   volume: 0.1,
   onend: function() {
@@ -45,7 +48,7 @@ const sceneOptions = {
 	opacity:[0,1],
 	duration:1000,
 	complete:function(){
-		console.log(bg_sound.playing());
+		console.log();
 	}
 }
 
@@ -60,6 +63,9 @@ const introTL = anime.timeline({
 introTL.add({
 	targets:".sceneOne",
 	opacity:[0,1],
+	complete:function(){
+
+	}
 })
 
 .add({
@@ -68,7 +74,6 @@ introTL.add({
 	opacity:[0,1],
 	complete: function(anim) {
 		// start background loop
-		body.classList.add("music-playing")
     console.log(bg_sound.playing());
   }
 }, 1000)
@@ -409,26 +414,30 @@ sceneSixTL.pause()
 
 
 
-
+const sound_btn_text = document.querySelector("._jsSound span");
 // EVENT LISTENERS
 
 soundCtrl.addEventListener("click",(e)=>{
 	console.log(`from sound control`)
-	body.classList.contains("music-playing") ? body.classList.remove("music-playing"):body.classList.add("music-playing");
-	
-	bg_sound.playing ? bg_sound.pause():bg_sound.play()
+	if(!bg_audio.paused){
+		bg_audio.pause()
+		sound_btn_text.innerText = 'Sound On'
+	}else{
+		bg_audio.play()
+		sound_btn_text.innerText = 'Sound Off'
+	}
+
+	bg_audio.volume = 0.1;
+
 })
 
 
-body.addEventListener('click', function(){
-		if(bg_sound.playing){
-			bg_sound.pause()
-		}
-})	
 
 
 scene1NextBtn.addEventListener("click", (e)=>{
 	// play Sound
+	bg_audio.play();
+	sound_btn_text.innerText = 'Sound Off'
 	bg_sound.play();
 	// change Scene
 	swiper.slideNext()
@@ -447,7 +456,7 @@ scene2NextBtn.addEventListener("click", (e)=>{
 	swiper.slideNext()
 	sceneThreeTL.play()
 	video.style = "opacity:0"
-	video.src = '';
+	video.src = 'media/smoke1.mp4';
 	video.load();
 	video.play()
 	console.log(video)
@@ -457,25 +466,43 @@ scene2NextBtn.addEventListener("click", (e)=>{
 scene3NextBtn.addEventListener("click", (e)=>{
 	swiper.slideNext();
 	sceneFourTL.play();
-	video.style = "opacity:0";
-	video.src = '';
+	video.style = "opacity:0"
+	video.src = 'media/smoke1.mp4';
 	video.load();
-	video.play();
-	console.log(video);
-	video.style = "opacity:1";
+	video.play()
+	console.log(video)
+	video.style = "opacity:1"
 })
 
 scene4NextBtn.addEventListener("click", (e)=>{
 	swiper.slideNext()
 	sceneFiveTL.play()
+	video.style = "opacity:0"
+	video.src = 'media/smoke1.mp4';
+	video.load();
+	video.play()
+	console.log(video)
+	video.style = "opacity:1"
 })
 
 scene5NextBtn.addEventListener("click", (e)=>{
 	swiper.slideNext()
 	sceneSixTL.play()
+	video.style = "opacity:0"
+	video.src = 'media/smoke1.mp4';
+	video.load();
+	video.play()
+	console.log(video)
+	video.style = "opacity:1"
 })
 
 scene6NextBtn.addEventListener("click", (e)=>{
 	swiper.slideNext()
 	sceneThreeTL.play()
+	video.style = "opacity:0"
+	video.src = 'media/smoke1.mp4';
+	video.load();
+	video.play()
+	console.log(video)
+	video.style = "opacity:1"
 })

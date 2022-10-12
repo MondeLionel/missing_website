@@ -479,3 +479,20 @@ svg{
 		opacity: 1;
 	}
 }
+
+
+@media (max-width: 600px){
+	*{}
+	.selectors{
+		flex-wrap: wrap;
+	}
+	
+	.historyImg{
+		margin-top:1em;
+		padding: 1em;
+	}
+	
+	.historyContent{
+		padding: 10px;
+	}
+}
