@@ -20,7 +20,7 @@ window.addEventListener("load", function(){
    
 
     // check if images are loaded
-    imagesLoaded( document.querySelector('main'), { background: true }, function( instance ) {
+    imagesLoaded( document.querySelector('main'), { background: '.hero' }, function( instance ) {
           console.log('all images are loaded');
           console.log(instance)
            body.classList.remove("loading")
