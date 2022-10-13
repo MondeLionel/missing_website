@@ -431,12 +431,6 @@ sceneFiveTL.pause()
 sceneSixTL.pause()
 
 
-
-
-
-
-
-
 const sound_btn_text = document.querySelector("._jsSound span");
 // EVENT LISTENERS
 
@@ -453,8 +447,6 @@ soundCtrl.addEventListener("click",(e)=>{
 	bg_audio.volume = 0.1;
 
 })
-
-
 
 
 scene1NextBtn.addEventListener("click", (e)=>{
