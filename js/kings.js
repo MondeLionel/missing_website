@@ -18,6 +18,23 @@ const video = document.querySelector(".bg_video");
 const nextBtn = document.querySelectorAll(".nextBtn")
 const bg_audio = document.querySelector('#bg_audio')
 
+const sub_menu	= document.querySelector("#subMenu");
+const chapter_selector = document.querySelector("#_chapters");
+
+chapter_selector.addEventListener('click',(e)=>{
+	e.preventDefault();
+	// console.log(body)
+	body.classList.toggle('subMenuOpen');
+})
+
+
+body.addEventListener("click",(e)=>{
+	// console.log(this)
+	// (body.classList.contains("subMenuOpen")) ? body.classList.remove("subMenuOpen"):body.classList.add("subMenuOpen")
+
+})
+
+
 console.log(bg_audio)
 bg_audio.volume = 0.35;
 
@@ -28,6 +45,14 @@ const swiper = new Swiper('.swiper-container.scenes',{
 		crossFade: true
 	}
 })
+
+function _slideTo(index){
+	swiper.slideTo(index)
+	console.log(index)
+}
+
+
+
 
 var bg_sound = new Howl({
   src: ['https://link.storjshare.io/s/jxkusjjea7zjkkwe2f6ykpst35va/voices/media/thunder.wav?wrap=0'],
@@ -404,8 +429,6 @@ sceneThreeTL.pause()
 sceneFourTL.pause()
 sceneFiveTL.pause()
 sceneSixTL.pause()
-
-
 
 
 
