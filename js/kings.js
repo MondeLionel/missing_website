@@ -49,6 +49,35 @@ const swiper = new Swiper('.swiper-container.scenes',{
 function _slideTo(index){
 	swiper.slideTo(index)
 	console.log(index)
+	let expr = index;
+	sceneTwoTL.pause()
+	sceneThreeTL.pause()
+	sceneFourTL.pause()
+	sceneFiveTL.pause()
+	sceneSixTL.pause()
+
+	switch(expr){
+		case 1:
+			sceneTwoTL.play()
+			console.log("scene2 playing")
+			break;
+		case 2:
+			sceneThreeTL.play()
+			console.log("scene3 playing")
+			break;
+		case 3:
+			sceneFourTL.play()
+			console.log("scene4 playing")
+			break;
+		case 4:
+			sceneFiveTL.play()
+			console.log("scene5 playing")
+			break;
+		case 5:
+			sceneSixTL.play()
+			console.log("scene6 playing")
+			break;
+	}
 }
 
 
@@ -78,8 +107,9 @@ const sceneOptions = {
 }
 
 
+const loadingAnim = anime.timeline({
 
-
+})
 const introTL = anime.timeline({
 	easing: 'easeOutExpo'
 });
