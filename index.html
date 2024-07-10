@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendor/css/locomotive-scroll.css">
@@ -14,12 +15,17 @@
 	<link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body class="loading" >
+<body class="loading wittgenstein-header">
 
 	<div class="loader">
 		<div class="blurBg"></div>
 		<div class="loaderContent">
 			<p>MISSING</p>
+			<p>Amakhala Filim & Treasure Ark Pictures</p>
+			<a href="javascript:void(0)" class="loadSoundBtn">
+					<span>This website uses sound. <u>Click to allow.</u></span>
+					<p><small>The sound can be turned off</small></p>
+				</a>
 		</div>
 	</div>
 
@@ -29,7 +35,7 @@
 				<!-- blur -->
 
 				<div class="logo">
-					<a href="#">MISSING</a>
+					<a href="#">THE MISSING PROJECT</a>
 				</div>
 				<div class="menu">
 					<!-- <a href="mkabayi.html" class="menuItem">uMkabayi</a> -->
@@ -41,18 +47,30 @@
 					<a href="javascript:void(0)" class="menuItem">The Team</a>
 
 				</div>
-				<a href="javascript:void(0)" class="menuItem">
+				<a href="javascript:void(0)" class="menuItem soundBtn">
 					<img src="img/icons/sound.png" alt="" class="img-fluid icon">
 					<span>Sound On</span>
 				</a>
 			</div>
 		</header>
 
+<!-- Hero title -->
 
-
-			<div class="hero fullWidth" data-scroll-section>
+			<div class="fullWidth heroHeader" data-scroll-section>
 				<div class="noise"></div>
-				<div class="content">
+				<div class="content wittgenstein-header w-50">
+					<h1 class="xl-text" data-scroll data-scroll-speed="1">
+						<span>Missing</span>
+					</h1>
+					<p class="text-center yellow" data-scroll data-scroll-speed="1.5">As bodies pile up on campus, a freshman's nightmares become reality, unveiling a sinister birthright that pits him against his family's old enemies.</p>
+				</div>
+			</div>
+
+
+
+<!-- Hero protag -->
+			<div class="hero fullWidth" data-scroll-section data-scroll-call="openMenu()">
+				<div class="content wittgenstein-header">
 					<h1 data-scroll data-scroll-speed="2">
 						<span>NDUMISO</span>
 					</h1>
@@ -70,51 +88,6 @@
 					<!-- CHaracter Biography -->
 				</div>
 			</div>
-
-			<section id="js-target" class="lineage fullWidth" data-scroll-section>
-				<!-- <h1>Lineage of contemporary Kings</h1> -->
-				<div style="margin-top:2em" class="fixedContainer" data-scroll data-scroll-sticky data-scroll-target="#js-target" data-scroll-offset="15%,5%">
-				<div class="kings" data-scroll data-scroll-speed="20" data-scroll-direction="horizontal">
-					<a href="#" class="king">
-						<img src="img/kings/KingShaka.jpg" alt="" class="img-fluid">
-						<span class="name">Shaka kaSenzangakhona</span>
-					</a>
-					<a href="#" class="king">
-						<img src="img/kings/Dingane.png" alt="" class="img-fluid">
-						<span class="name">Dingane kaSenzangakhona</span>
-					</a>
-					<a href="#" class="king">
-						<img src="img/kings/King-Mpande-1.gif" alt="" class="img-fluid">
-						<span class="name">Mpande kaSenzangakhona</span>
-					</a>
-					<a href="#" class="king">
-						<img src="img/hero.jpg" alt="" class="img-fluid">
-						<span class="name">Cetshwayo kaMpande</span>
-					</a>
-					<a href="#" class="king">
-						<img src="img/kings/Dinizulu.jpg" alt="" class="img-fluid">
-						<span class="name">Dinuzulu kaCetshwayo</span>
-					</a>
-					<a href="#" class="king">
-						<img src="img/kings/Screenshot_20210518-174534_Gallery.jpg" alt="" class="img-fluid">
-						<span class="name">Solomon kaDinuzulu</span>
-					</a>
-					<a href="#" class="king">
-						<img src="img/kings/Cyprian_Bhekuzulu_kaSolomon.jpg" alt="" class="img-fluid">
-						<span class="name">Cyprian Bhekuzulu kaSolomon</span>
-					</a>
-					<a href="#" class="king">
-						<img src="img/kings/King_Goodwill_Zwelithini.jpg" alt="" class="img-fluid">
-						<span class="name">Goodwill Zwelithini kaBhekuzulu</span>
-					</a>
-					<a href="#" class="king">
-						<img src="img/kings/misuzulu.jpg" alt="" class="img-fluid">
-						<span class="name">Misuzulu Zulu kaZwelithini</span>
-					</a>
-				</div>
-
-				</div>
-			</section>
 			<section class="history fullWidth" data-scroll-section style="background-color: #111;">
 				<div class="container py-5" style="max-width: 40vw;">
 					<p class="xxs" data-scroll>The Plot</p>
@@ -124,7 +97,7 @@
 						<p>Ndumiso is no ordinary young man, but he does not know this. He goes to university only to find his reality shattered by strange people and even stranger happenings. Death and mystery soon follow, forcing him to confront the source of his troubles. And when he does,he must confront his enemy from before his birth.</p>
 						<p>Gasa, Thabelo, Nyawose, Phingoshe, Mangamahle, Nomndayi, Singila, Hlombe, Meyiwa omalala ngokulala bavuka bakhomba ilanga</p>
 					</div>
-				<a href="mkabayi.html" class="btn btn-light customBtn" data-scroll data-scroll-speed="1">HISTORY</a>
+				<!-- <a href="mkabayi.html" class="btn btn-light customBtn" data-scroll data-scroll-speed="1">HISTORY</a> -->
 				</div>
 				<!-- sector -->
 			</section>
@@ -140,19 +113,19 @@
 				<div class="character center">
 					<div class="chContent">
 						<h1>Zinhle</h1>
-						<p>Student, Ndu's girlfriend</p>
+						<p>Ndu's Sibling, also a student</p>
 					</div>
 				</div>
 				<div class="character right">
 					<div class="chContent">
 						<h1>Prof Wadi</h1>
-						<p>Student, Ndu's girlfriend</p>
+						<p>Faculty Staff</p>
 					</div>
 				</div>
 				<div class="character ben">
 					<div class="chContent">
 						<h1>Benjamin</h1>
-						<p>Student, Ndu's girlfriend</p>
+						<p>Student</p>
 					</div>
 				</div>
 			</section>
@@ -165,7 +138,7 @@
 				<img src="img/characters/lwandle_khawula.png" alt="" class="d-block mx-auto">
 			</section>
 
-			<section class="wars fullWidth" data-scroll-section>
+<!-- 			<section class="wars fullWidth" data-scroll-section>
 				<div class="selectors">
 					<a href="#" class="cardHistory" data-bs-toggle="modal" data-bs-target="#warModal" style="background-image:url('img/leopard.jpg');">
 						<p>Lore</p>
@@ -182,9 +155,16 @@
 						<h2 data-scroll data-scroll-speed="3">The Khawula Clan</h2>
 					</a>
 				</div>	
-			</section>
+			</section> -->
 			
 	</main>
+
+	<footer class="footer">
+		<p>Copyright &copy; 2023-2024, </p>
+		<div class="links">
+			<a href="#" class="link">For Investors</a>
+		</div>
+	</footer>
 
 	<!-- modal -->
 	<!-- Button trigger modal -->
@@ -201,66 +181,48 @@
 	    		<span class="line"></span>
 	    	</div>
 	    	<div class="historyContent" style="">
-	    		<div class="historyMain">
-	    			<h1>The Lore</h1>
-	    			<h3>Stigma</h3>
-	    			<p>In the age of strife, the Msomi clan used their magic to defend the kingdom and develop new ways of life, from Medicine to Agriculture, even rudimentary machines, scholarship and all manner of engineering. They mapped the stars, catalogued the animals of nature and spent copious amounts of energy trying to reach the moon. </p>
-	    			<p>However beautiful their works, they were ultimately going to important to the kings and the royal family's ambitions. The founder of the clan, forbade his descendents from using their power for anything but to protect, and bound his male heirs to continue his line.</p>
-	    			<h3>Why are there no matriachs in the Msomi clan</h3>
-	    			<p>The clans magic connects the mind of the caster with those of others but more powerful wielders can do more than telepathy. The powerful can conjure dreams into existance. This requires a large amount of magic and female wielders store that magic differently. Childbirth neccesitates the mother giving her magic to the child, and so woman have a finite source of magic. When they do use it, it burns brightly and briefly, causing them to use their life force and eventually lose body parts, literally rotting away.</p>
-	    			<p>A few times in history, a woman rose as a powerful wielder, a dreamcatcher, but she died before mastering it as it used a copious amount of energy. Some have stigmas, rotting flesh and broken bodies as a result of attempting to sit at the top of the clan. So the court has only ever known male representatives of the clan.</p>
-	    			<h3>Power Scale</h3>
-	    			<p>TP on one person uses about as much energy as an olympic sprinter in a 400m dash. Its extremely tiring to use without training and stamina so only a few people can undergo the training, and even fewer ever make it. So Msomi clansmen who do have the magic are usually physically fit and hardy, and usually hard to kill with or without it.</p>
-	    			<p><b>Exceptions are natural talents like<i> dreamcatchers</i> who are exceeedingly rare, almost 1 in 5 000 000 births. They do not use the energy-magic conversion and are feared immensely even within the clan. They are generally given special roles and form part of an elite military group whose MO is working in the shadows.<b></p>
-	    			<h3>The Fall</h3>
-	    			<p>The Clan no longer holds much power for various reasons.</p>
-	    			<ul>
-	    				<li>The Royal house ordered the execution of all ranked memebers of the clan. This disrupted the flow and genetics of the lineages.</li>
-	    				<li>The Clans on-going war with the Khawula clan is arguably caused the most damage.</li>
-	    				<li>One rogue wielder managed to control a few hundred thousand people, plunging the whole kingdom into strife. Such a display of power caused the royal house to fear the Msomi. The king ordered all children aged 12 to undergo a magic sealing ceremony to prevent a tragedy from happening again. </li>
-	    			</ul>
-	    		</div>
+	    		
 	    	</div>
 	    	</div>
 	    </div>
 	  </div>
 
 
-	<div class="modal" id="warModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
-	    <div class="modal-content">	
-	    	<a href="javascript:void(0)" data-bs-dismiss="modal" class="closeModal">Close</a>
-	    	<div class="historyContent"></div>
+<div class="modal" id="warModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+    <div class="modal-content">	
+    	<a href="javascript:void(0)" data-bs-dismiss="modal" class="closeModal">Close</a>
+    	<div class="historyContent"></div>
 
-	    </div>
-	  </div>
-	</div>
-		<div class="modal" id="warModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
-	    <div class="modal-content">	
-	    	<a href="javascript:void(0)" data-bs-dismiss="modal" class="closeModal">Close</a>
-	    	<div class="historyContent"></div>
-	    </div>
-	  </div>
-	</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="warModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+    <div class="modal-content">	
+    	<a href="javascript:void(0)" data-bs-dismiss="modal" class="closeModal">Close</a>
+    	<div class="historyContent"></div>
+    </div>
+  </div>
+</div>
 	
-
+	<audio src="https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/HxKQM0zSDkf8xwatf/audioblocks-eerie-nights-final_BPahDrPyq_NWM.mp3" id="bg_audio" autoplay></audio>
 	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 	<script src="vendor/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/js/anime.min.js"></script>
+	<!-- <script src="vendor/js/anime.min.js"></script> -->
 	<script src="vendor/js/howler.min.js"></script>
 	<script src="vendor/js/locomotive-scroll.min.js"></script>
 	<!-- <script src="vendor/js/rellax.min.js"></script> -->
 	<script src="vendor/js/scroll-out.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
 	
 	<script src="js/main.js"></script>
 	<script type="text/javascript">
-	
-		window.addEventListener('scrollEvent', (e) => {
-    		const { target, way, from } = e.detail;
-    		console.log(`target: ${target}`, `way: ${way}`, `from: ${from}`);
-		});
+		console.log("inline js");
+
+
 	</script>
 
 </body>

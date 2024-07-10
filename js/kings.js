@@ -36,7 +36,7 @@ body.addEventListener("click",(e)=>{
 
 
 console.log(bg_audio)
-bg_audio.volume = 0.35;
+bg_audio.volume = 0.15;
 
 
 const swiper = new Swiper('.swiper-container.scenes',{
@@ -83,7 +83,7 @@ function _slideTo(index){
 
 
 
-var bg_sound = new Howl({
+let bg_sound = new Howl({
   src: ['https://link.storjshare.io/s/jxkusjjea7zjkkwe2f6ykpst35va/voices/media/thunder.wav?wrap=0'],
   loop: true,
   volume: 0.1,

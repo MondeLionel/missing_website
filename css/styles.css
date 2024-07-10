@@ -1,9 +1,32 @@
+:root{
+	--green: #455047;
+	--green-gradient: linear-gradient(0deg,#4e4f43,#413227);
+	--gold:#ffb032;
+}
+
 *{
+}
+
+@font-face {
+  font-family: 'heineken';
+  src: url('../vendor/fonts/HEINEKEN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*<uniquifier>: Use a unique and descriptive class name*/
+/*<weight>: Use a value from 400 to 900*/
+
+.wittgenstein-header{
+  font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 
 body{
-	font-family: 'Inter Tight', sans-serif;
+/*	font-family: 'Inter Tight', sans-serif;*/
 	background-color: #000;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -45,6 +68,18 @@ header{
 	justify-content: center;
 }
 
+
+.footer{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 99999;
+}
+
+
 .loading .loader{
 	transform: translateY(0);
 	transition: transform 0.3s ease-in;
@@ -65,7 +100,12 @@ header{
 	align-items: center;
 	transform: translateY(100%);
 	transition: transform 0.3s ease-out;
+}
 
+
+.loadSoundBtn{
+	position: absolute;
+	bottom: 30%;
 }
 
 .blurBg{
@@ -157,6 +197,10 @@ header{
 	height: 100vh;
 }
 
+.xl-text{
+	font-size: 15vw;
+	font-family: 'heineken';
+}
 .closeModal{
 	position: absolute;
 	z-index: 10;
@@ -188,6 +232,52 @@ header{
 	font-weight: 700;
 /*	text-decoration: underline;*/
 }
+
+.soundBtn{
+	  background-color: #ffb032;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+    min-width: 140px;
+    padding:20px;
+    border-radius: 20px;
+}
+
+
+
+
+/*HEADER SECTION*/
+
+.heroHeader{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../img/header.jpg');
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--green);
+	position: relative;
+}
+
+.heroHeader .content{
+	color: var(--gold);
+}
+
+.heroHeader .content h1{
+
+}
+
+
+
+
+
+
+
+
+/*HERO SECTION*/
 .hero{
 	height: 100%;
 	display: flex;
@@ -196,8 +286,8 @@ header{
 	justify-content: flex-end;
 	min-height: 100vh;
 	background-image: url("../img/hero.png");
-	background-size: cover;
-	background-position: center 40%;
+	background-size: 50%;
+	background-position: center right;
 	background-repeat: no-repeat;
 	width: 100vw;
 	position: relative;
