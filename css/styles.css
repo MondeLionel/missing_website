@@ -79,6 +79,10 @@ header{
   z-index: 99999;
 }
 
+body.loading{
+	overflow: hidden;
+	
+}
 
 .loading .loader{
 	transform: translateY(0);

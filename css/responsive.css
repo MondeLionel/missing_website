@@ -1,0 +1,52 @@
+@media (max-width: 440px) {
+	*{}
+
+	body.loading main{
+		opacity: 0;
+		overflow: hidden;
+	}
+	.menuItem{
+		color: #fff;
+		padding: 0;
+        height: 30px;
+	}
+
+	.hero{
+		background-size: cover;
+        background-position: center;
+        min-height: 50vh;
+	}
+
+
+
+	.heroHeader{
+		background-size: cover;
+	}
+
+	.history{
+/*		height: 80vh;*/
+	}
+
+	.heroheader .content{
+
+	}
+
+	.characters{
+/*		height: 65vh;*/
+	}
+	.cta{
+
+	}
+
+	#antag{
+		height: 56vh;
+		overflow: hidden;
+	}
+
+	#antag img{
+		width:100%;
+	}
+
+}
+
+		

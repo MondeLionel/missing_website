@@ -6,13 +6,14 @@
 	<title>Missing</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;900&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendor/css/locomotive-scroll.css">
 
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	
 
 </head>
 <body class="loading wittgenstein-header">
@@ -35,16 +36,16 @@
 				<!-- blur -->
 
 				<div class="logo">
-					<a href="#">THE MISSING PROJECT</a>
+					<a href="#hero">THE MISSING PROJECT</a>
 				</div>
 				<div class="menu">
 					<!-- <a href="mkabayi.html" class="menuItem">uMkabayi</a> -->
 					<!-- <a href="javascript:void(0)" class="menuItem">Credits</a> -->
 					<!-- <a href="cards.html" class="menuItem">Notable Figures</a> -->
-					<a href="javascript:void(0)" class="menuItem">The Plot</a>
-					<a href="javascript:void(0)" class="menuItem">The Characters</a>
-					<a href="javascript:void(0)" class="menuItem">The Project</a>
-					<a href="javascript:void(0)" class="menuItem">The Team</a>
+					<a href="#" class="menuItem" onclick="scrollToSection('#plot')">The Plot</a>
+					<a href="#" class="menuItem" onclick="scrollToSection('#characters')">The Characters</a>
+					<!-- <a href="javascript:void(0)" class="menuItem">The Project</a>
+					<a href="javascript:void(0)" class="menuItem">The Team</a> -->
 
 				</div>
 				<a href="javascript:void(0)" class="menuItem soundBtn">
@@ -56,7 +57,7 @@
 
 <!-- Hero title -->
 
-			<div class="fullWidth heroHeader" data-scroll-section>
+			<div class="fullWidth heroHeader" data-scroll-section id="hero">
 				<div class="noise"></div>
 				<div class="content wittgenstein-header w-50">
 					<h1 class="xl-text" data-scroll data-scroll-speed="1">
@@ -88,8 +89,8 @@
 					<!-- CHaracter Biography -->
 				</div>
 			</div>
-			<section class="history fullWidth" data-scroll-section style="background-color: #111;">
-				<div class="container py-5" style="max-width: 40vw;">
+		<section class="history fullWidth" data-scroll-section style="background-color: #111;" id="plot">
+				<div class="container py-5">
 					<p class="xxs" data-scroll>The Plot</p>
 				
 					<h3>Ndumiso the Dreamcatcher</h3>
@@ -103,7 +104,7 @@
 			</section>
 
 			<!-- The Characters -->
-			<section class="characters fullWidth" data-scroll-section>
+			<section class="characters fullWidth" data-scroll-section id="characters">
 				<div class="character left">
 					<div class="chContent">
 						<h1>Xoli</h1>

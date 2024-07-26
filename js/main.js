@@ -11,7 +11,7 @@ const bg_audio_src = "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/HxKQM0
 // console.log(images)
 let bg_sound = new Howl({
   src: [bg_audio_src],
-    loop: true,
+    loop: false,
   volume: 0.05,
   onend: function() {
     console.log('Finished!');
@@ -21,20 +21,14 @@ let bg_sound = new Howl({
 console.log(bg_sound)
 
 loadSoundBtn.addEventListener('click', (e)=>{
-    bg_sound.play();
-    body.classList.remove("loading")
+    bg_sound.pause();
+    hideLoadingScreen();
 })
 
 soundBtn.addEventListener('click', function(e){
-        // soundBtn.innerText = 'Sound On';
-        // bg_sound.play();
-        // console.log("playing")
-
         soundBtn.innerText = 'Sound Off';
-        bg_sound.pause();
-        console.log("paused")
-    
-      
+        bg_sound.play();
+        console.log("paused");
 });
 
 
@@ -69,22 +63,59 @@ ScrollOut({
 
 lscroll.on('call',(obj)=>{
     // openMenu(obj)
-    console.log(this)
-})
+    console.log(this);
+});
+
+function scrollToSection(sectionId) {
+  const section = document.querySelector(sectionId);
+  if (section) {
+    lscroll.scrollTo(section);
+  }
+}
 
 function openMenu(_obj)
 {
-    console.log(_obj)
+    console.log(_obj);
 }
 
+
+// Function to show the loading screen
+function showLoadingScreen() {
+  // Your code to display the loading screen
+  console.log("Loading screen shown");
+}
+
+// Function to hide the loading screen
+function hideLoadingScreen() {
+    body.classList.remove("loading");
+
+  console.log("Loading screen hidden");
+}
+
+// Check if the loading screen has been shown before
+if (!localStorage.getItem('loadingScreenShown')) {
+  // Show the loading screen
+  showLoadingScreen();
+  // Simulate some loading time (replace with your actual loading logic)
+  setTimeout(() => {
+    // Hide the loading screen
+    hideLoadingScreen();
+    // Set the flag in localStorage
+    localStorage.setItem('loadingScreenShown', 'true');
+  }, 3000); // 3 seconds for this example
+} else {
+  console.log("Loading screen already shown before, skipping...");
+}
+
+
+
 window.addEventListener("load", function(){
-    console.log("finished loading")
-   // bg_sound.play();
+    console.log("finished loading");
 
     // check if images are loaded
     imagesLoaded( document.querySelector('body'), { background: true }, function( instance ) {
           console.log('all images are loaded');
-          console.log(instance)
-          // body.classList.remove("loading");
+          console.log(instance);
+          hideLoadingScreen();
         });
 })
